@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: spring-cloud-alibaba-nacos-config
+  cloud:
+    config:
+      bootstrap: true
+    nacos:
+      config:
+        # server-addr 指定 Nacos 服务器主机和端口
+        server-addr:  127.0.0.1:8848
+        # 配置内容的数据格式
+        # ${spring.application.name}-${spring.profiles.active}.${file-extension}
+        file-extension: yaml
+        prefix: spring-cloud-alibaba-nacos-config
