@@ -13,6 +13,9 @@
         <module>spring-cloud-alibaba-nacos-order</module>
         <module>spring-cloud-alibaba-nacos-account</module>
         <module>spring-cloud-alibaba-nacos-config</module>
+        <module>spring-cloud-alibaba-sentinel-nacos</module>
+        <module>spring-cloud-alibaba-sentinel-order</module>
+        <module>spring-cloud-alibaba-sentinel-account</module>
     </modules>
 
     <properties>
