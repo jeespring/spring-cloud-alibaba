@@ -9,6 +9,12 @@
     <packaging>pom</packaging>
     <description>spring-cloud-alibaba</description>
 
+    <modules>
+        <module>spring-cloud-alibaba-nacos-order</module>
+        <module>spring-cloud-alibaba-nacos-account</module>
+        <module>spring-cloud-alibaba-nacos-config</module>
+    </modules>
+
     <properties>
         <java.version>1.8</java.version>
         <maven.compiler.target>1.8</maven.compiler.target>
