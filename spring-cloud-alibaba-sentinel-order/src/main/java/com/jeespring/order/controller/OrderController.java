@@ -27,4 +27,10 @@ public class OrderController {
         String account = accountFeignService.deduct(userId, money);
         return result + account;
     }
+
+    @RequestMapping("/account")
+    public String account(@RequestParam("userId") long userId) {
+        String result = "获取用户账户余额" + userId + "成功。\n";
+        return result;
+    }
 }
