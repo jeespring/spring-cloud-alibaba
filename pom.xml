@@ -16,6 +16,7 @@
         <module>spring-cloud-alibaba-sentinel-nacos</module>
         <module>spring-cloud-alibaba-sentinel-order</module>
         <module>spring-cloud-alibaba-sentinel-account</module>
+        <module>spring-cloud-alibaba-sentinel-cluster-order</module>
     </modules>
 
     <properties>
@@ -27,6 +28,7 @@
         <spring.boot.version>2.4.2</spring.boot.version>
         <spring.cloud.version>2020.0.1</spring.cloud.version>
         <spring.cloud.alibaba.version>2021.1</spring.cloud.alibaba.version>
+        <sentinel.version>1.8.0</sentinel.version>
         <sentinel.datasource.version>1.8.2</sentinel.datasource.version>
         <lombok.version>1.18.12</lombok.version>
         <fastjson.version>1.2.75</fastjson.version>
@@ -64,11 +66,24 @@
                 <scope>import</scope>
             </dependency>
 
-            <!-- sentinel -->
+            <!-- Nacos for dynamic data source -->
             <dependency>
                 <groupId>com.alibaba.csp</groupId>
                 <artifactId>sentinel-datasource-nacos</artifactId>
                 <version>${sentinel.datasource.version}</version>
+            </dependency>
+
+            <!-- sentinel cluster-->
+            <dependency>
+                <groupId>com.alibaba.csp</groupId>
+                <artifactId>sentinel-cluster-server-default</artifactId>
+                <version>${sentinel.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.alibaba.csp</groupId>
+                <artifactId>sentinel-cluster-client-default</artifactId>
+                <version>${sentinel.version}</version>
             </dependency>
 
             <dependency>

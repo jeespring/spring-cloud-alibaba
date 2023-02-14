@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: spring-cloud-alibaba-sentinel-cluster-order
+  cloud:
+    nacos:
+      discovery:
+        username: nacos
+        password: nacos
+        # nacos 服务器主机和端口
+        server-addr: 127.0.0.1:8848
+        namespace: public
+    sentinel:
+      transport:
+        # 配置Sentinel DashBoard地址
+        dashboard: 127.0.0.1:9000
+        # 应用与Sentinel控制台交互的端口
+        # 默认8719端口，如果端口被占用，依次+1
+        port: 8719
+server:
+  port: 13001
